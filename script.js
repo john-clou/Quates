@@ -1,4 +1,5 @@
 const par = document.querySelector("p");
+const parCon = document.querySelector(".quaCon");
 const mainArr = [
   "الناس عديمو القيمة يعيشون ليأكلوا ويشربوا؛ والناس ذوو القيمة يأكلون ويشربون ليعيشوا.",
   "الأغنى هو من يقتنع بالقليل.",
@@ -21,7 +22,7 @@ const mainArr = [
 const x = mainArr.length;
 let num;
 const cenNum = () => Math.floor(Math.random() * 10 ** 6) % x;
-par.addEventListener("click", function () {
+parCon.addEventListener("click", function () {
   num = cenNum();
   par.innerHTML = mainArr[num];
 });
